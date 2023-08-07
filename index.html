@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo/logo2circle.jpg" type="image/x-icon"> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif&family=Inter:wght@300;400;700&family=Neuton&family=Newsreader&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering circle.com</title>
+</head>
+<body>
+  <div class="loader"></div>
+    <nav class="navbar">
+    <!-- LOGO -->
+    <div class="logo">
+      <a href="index.html"><img src="logo/logo2.png" alt="" class="log"></a>
+    </div>
+
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+
+      <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ourteam.html">Our Team</a></li>
+        <li><a href="shop.html">Shop</a></li>
+
+        <li class="services">
+          <p>Study Material ▼</p>
+
+          <!-- DROPDOWN MENU -->
+          <ul class="dropdown">
+            <li><a href="syllabus.html">Syllabus </a></li>
+            <li><a href="lm.html">Lab Manual ans PDF</a></li>
+            <li><a href="/">Sample Question Paper</a></li>
+            <li><a href="/">Model ans Paper</a></li>
+            <li><a href="/">Micro-project / Final year project</a></li>
+            <li><a href="/">Viva Question and Ans</a></li>
+          </ul>
+
+        </li>
+
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="pm.html"><span>Premium member</span></a></li>
+      </div>
+    </ul>
+  </nav>
+  <div class="text">
+    <h1>Welcome to</h1>
+  </div>
+  <div class="c">
+  <h1>Engineering <span>circle.com</span></h1>
+  <h3>⪡ Aspiring knowledge.... ⪢</h3>
+  </div>
+  <div class="t2">
+    <h1># Trending Now 🔥</h1>
+  </div>
+  <br>
+  <br>
+<div class="container">
+  <div class="box" data-aos="fade-up">
+    <img src="bg/post.png" alt="" class="i1">
+    <a href="blog1.html"><h3 class="h3">Diploma in Computer Engineering ,What is Computer Engineering ?</h3></a>
+  </div>
+  <div class="box" data-aos="fade-up">
+    <img src="bg/post.png" alt="" class="i1">
+    <h3 class="h3">Health Education and Community Pharmacy Questions Pdf</h3>
+  </div>
+  <div class="box" data-aos="fade-up">
+    <img src="bg/post.png" alt="" class="i1">
+    <h3 class="h3">Health Education and Community Pharmacy Questions Pdf</h3>
+  </div>
+  <div class="box" data-aos="fade-up">
+    <img src="bg/post.png" alt="" class="i1">
+    <h3 class="h3">Health Education and Community Pharmacy Questions Pdf</h3>
+  </div>
+</div>
+<div class="container2">
+  <div class="box2">
+
+  </div>
+  <div class="box2">
+    
+  </div>
+  <div class="box2">
+    
+  </div>
+  <div class="box2">
+    
+  </div>
+</div>
+
+<button>Read more</button>
+<br>
+<br>
+<footer>
+  <div class="icons">
+  <a href="https://instagram.com/engineering_circle?igshid=MTI1ZDU5ODQ3Yw=="><img src="icons/instagram.png" alt="" class="i"></a>
+  <a href=""><img src="icons/linkedin.png" alt="" class="l"></a>
+  <a href=""><img src="icons/twitter.png" alt="" class="t"></a>
+  <a href=""><img src="icons/gmail.png" alt="" class="g"></a>
+</div>
+<h4>Made with <span> &#10084; </span>by team <b>Engineering-<span>circle.com</b></span></h4>
+</footer>
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+<!--Start of Conferbot Script-->
+<script type="text/javascript">
+  (function (d, s, id) {
+    var js,
+      el = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {
+      return;
+    }
+    js = d.createElement(s);
+    js.async = true;
+    js.src = 'https://s3.ap-south-1.amazonaws.com/conferbot.defaults/dist/v1/widget.min.js';
+    js.id = id;
+    js.charset = 'UTF-8';
+    el.parentNode.insertBefore(js, el);
+    // Initializes the widget when the script is ready
+    js.onload = function () {
+        var w = window.ConferbotWidget("64ad2adb23fba75f56234c4f", "live_chat");
+    };
+  })(document, 'script', 'conferbot-js');
+</script>
+<!--End of Conferbot Script-->
+<script>
+  window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+    loader.classList.add("loader-hidden");
+    loader.addEventListener("transitionend", () => {
+    document.body.removeChild("loader");
+    })
+    })
+</script>
+</html>

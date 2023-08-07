@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo/logo2circle.jpg" type="image/x-icon"> 
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif&family=Inter:wght@300;400;700&family=Neuton&family=Newsreader&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us - EC</title>
+</head>
+<body>
+  <div class="loader"></div>
+    <nav class="navbar">
+    <!-- LOGO -->
+    <div class="logo">
+      <a href="index.html"><img src="logo/logo2.png" alt="" class="log"></a>
+    </div>
+
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+
+      <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ourteam.html">Our Team</a></li>
+        <li><a href="shop.html">Shop</a></li>
+
+        <li class="services">
+          <p>Study Material ▼</p>
+
+          <!-- DROPDOWN MENU -->
+          <ul class="dropdown">
+            <li><a href="syllabus.html">Syllabus </a></li>
+            <li><a href="lm.html">Lab Manual ans PDF</a></li>
+            <li><a href="/">Sample Question Paper</a></li>
+            <li><a href="/">Model ans Paper</a></li>
+            <li><a href="/">Micro-project / Final year project</a></li>
+            <li><a href="/">Viva Question and Ans</a></li>
+          </ul>
+
+        </li>
+
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="pm.html"><span>Premium member</span></a></li>
+      </div>
+    </ul>
+  </nav>
+  <!---lht-->
+  <div class="lht">
+    <p>Let's Have a <span>Talk</span></p>
+    <div class="con">
+      <p><i class="fa-solid fa-phone fa-xs"></i> 91xxxxxxxx</p>
+      &nbsp;
+      &nbsp;
+      <a href="mailto:engicircle@gmail.com" ><p class="mail"><i class="fa-solid fa-envelope fa-xs"></i> engicircle@gmail.com</p></a>
+    </div>
+  </div>
+  <!--Contact start-->
+  <div id="contact">
+      <div class="container">
+      <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact <span>us</span></h1>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <input type="number" name="Phone" placeholder="Your mobile no" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn">Submit</button>
+          </form>
+          <span id="msg"></span>
+      </div>
+      </div>
+      </div>
+      </div>
+      <footer>
+        <div class="icons">
+        <a href="https://instagram.com/engineering_circle?igshid=MTI1ZDU5ODQ3Yw=="><img src="icons/instagram.png" alt="" class="i"></a>
+        <a href=""><img src="icons/linkedin.png" alt="" class="l"></a>
+        <a href=""><img src="icons/twitter.png" alt="" class="t"></a>
+        <a href=""><img src="icons/gmail.png" alt="" class="g"></a>
+      </div>
+      <h4>Made with <span> &#10084; </span>by team <b>Engineering-<span>circle.com</b></span></h4>
+      </footer>
+    <!--Contact end-->
+<script>
+    window.addEventListener("load", () => {
+      const loader = document.querySelector(".loader");
+      loader.classList.add("loader-hidden");
+      loader.addEventListener("transitionend", () => {
+      document.body.removeChild("loader");
+      })
+      })
+  </script>
+  <script src="https://kit.fontawesome.com/7a43ab629f.js" crossorigin="anonymous"></script>
+  <!--submit to google sheet-->
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw96pQeSSUcK5V5Tnxu5E0TdYZL-qIG5ssR_QACOPTgee4aWETlFopmIoX56OutpT6xNg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+      msg.innerHTML = "Message sent successfully"
+      setTimeout(function () {
+      msg.innerHTML = ""
+      },5000)
+      form. reset()
+      })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
