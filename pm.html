@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="icon" href="logo/logo2circle.jpg" type="image/x-icon"> 
     <link rel="stylesheet" href="pm.css">
+    <script src="https://kit.fontawesome.com/7a43ab629f.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Premium Member - EC</title>
 </head>
@@ -36,10 +37,7 @@
               <ul class="dropdown">
                 <li><a href="syllabus.html">Syllabus </a></li>
                 <li><a href="lm.html">Lab Manual ans PDF</a></li>
-                <li><a href="/">Sample Question Paper</a></li>
-                <li><a href="/">Model ans Paper</a></li>
-                <li><a href="/">Micro-project / Final year project</a></li>
-                <li><a href="/">Viva Question and Ans</a></li>
+                <li><a href="ma.html">Model ans Paper</a></li>
               </ul>
     
             </li>
@@ -49,6 +47,36 @@
           </div>
         </ul>
       </nav>
+      <div class="info">
+        <h2>What is Premium <span>Member ?</span></h2>
+        <p>as premium member we are providing you premium notes , personalised job alerts, which can help in your studies and career building. After your regestration
+          as premium member is done we will provide personalised job alerts on whatsapp and other 
+          social media platforms. We wish you best luck in your studies.</p>
+      </div>
+      <div class="v">
+        <img src="bg/My project.png" alt="">
+      </div>
+      <!--Contact start-->
+  <div id="contact">
+    <div class="container">
+    <div class="row">
+    <div class="contact-left">
+      <h1 class="sub-title">Premium <span>Member</span></h1>
+    </div>
+    <div class="contact-right">
+      <form name="submit-to-google-sheet">
+        <input type="text" name="Name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="number" name="Phone" placeholder="Your mobile no" required>
+        <input type="text" name="orgcode" placeholder="Provided Code eg.,(SSPI20)" >
+        <button type="submit" class="btn">Submit</button>
+        </form>
+        <span id="msg"></span>
+    </div>
+    </div>
+    </div>
+    </div>
+      <!--Contact end-->
       <footer>
         <div class="icons">
         <a href="https://instagram.com/engineering_circle?igshid=MTI1ZDU5ODQ3Yw=="><img src="icons/instagram.png" alt="" class="i"></a>
@@ -87,5 +115,24 @@
     I
     })
     })
+</script>
+<!--Submit to google-sheet-->
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbx_0JyFw6Eiek7MZ8exGuiicz06t2ZalvcMigwVgCnOLv73yYAzFTHOhUbq--ezqDHo/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg= document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+      msg.innerHTML = "Message sent successfully"
+      setTimeout(function () {
+      msg.innerHTML = ""
+      },5000)
+      form. reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
 </script>
 </html>
