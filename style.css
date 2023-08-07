@@ -418,8 +418,6 @@ input[type=checkbox] {
       top: 0;
       width: 100%;
     }
-
-    
   }
   @media screen and (max-width:1200px) {
     .box{
