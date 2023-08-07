@@ -128,7 +128,7 @@ input[type=checkbox] {
     color: #fff;
     padding: 20px;
     text-align: center;
-    margin-top: 500px;
+    margin-top: 100px;
   }
   footer p{
     margin-right: 110px;
@@ -209,6 +209,84 @@ input[type=checkbox] {
                 transform: rotate(1turn);
                 }
                 }
+    /*contact start*/
+    .contact-left{
+      color: #fff;
+      margin: 50px 150px;
+      font-size: 22px;
+      font-family: 'Poppins', sans-serif;
+    }
+    .contact-left span{
+      color: #51ff00;
+    }
+    .btn{
+      display: block;
+      margin: 0px 0px;
+      width: fit-content;
+      border: 1px solid #51ff00;
+      padding: 14px 50px;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #000000; 
+      transition: background 0.5s;
+  }
+  .btn:hover{
+      background: #51ff00;
+  }
+  .btn:hover p{
+      color: #000000;
+  }
+      .contact-right form{
+        width: 40%;
+        margin: 0px 40px;
+        }
+        form input, form textarea {
+        width: 100%;
+        border: 0;
+        outline: none;
+        background: rgba(88, 88, 88, 0.726);
+        padding: 15px;
+        margin: 15px 0;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 6px;
+        }
+      /*contact end*/
+      .v{
+        float: right;
+        margin-right: 230px;
+        margin-top: 100px;
+      }
+      .v img{
+        height: 450px;
+      }
+      .info{
+        background-color: rgba(36, 36, 36, 0.158);
+        backdrop-filter: blur(60px);
+        padding: 200px 10%;
+        margin-top: 140px;
+      }
+      .info h2{
+        color: #fff;
+        float: left;
+        margin-left: -60px;
+        margin-top: -110px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 100;
+        font-size: 35px;
+      }
+      .info h2 span{
+        color: #51ff00;
+      }
+      .info p{
+        color: #fff;
+        float: left;
+        margin-left: -60px;
+        margin-top: -60px;
+        font-family: 'Poppins', sans-serif;
+
+        font-size: 25px;
+      }
   @media (max-width: 768px) {
     body{
       background: url(bg/bg2.png);
@@ -270,6 +348,38 @@ input[type=checkbox] {
       color: #fff;
       padding: 10px;
       text-align: center;
-      margin-top: 900px;
+      margin-top: 150px;
     }
+    .info{
+      padding: px;
+    }
+    .info h2{
+      font-size: 22px;
+      margin-left: 0px;
+    }
+    .info p{
+      font-size: 20px;
+      margin-left: 0px;
+      margin-bottom: 80px;
+    }
+    .contact-left{
+      margin: 0px 0px;
+      margin-top: -100px;
+      font-size: 13px;
+      padding: 10px 10%;
+      font-weight: 100;
+    }
+    .v img{
+      display: none;
+      margin-top: -200px;
+    }
+    .contact-right form{
+      width: 80%;
+      margin: 0px 40px;
+      }
   }
+  #msg{
+    color: #61b752;
+    margin: -40px 200px;
+    display: block;
+    }
