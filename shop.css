@@ -161,7 +161,7 @@ input[type=checkbox] {
   font-size: 50px;
   }
   .box img{
-    height: 192px;
+    height: 140px;
     margin-top: 15px;
     margin-left: 9px;
     border-radius: 8px;
@@ -395,7 +395,7 @@ input[type=checkbox] {
         font-size: 27px;
       }
       .box img{
-        height: 220px;
+        height: 180px;
       }
       .box2 img{
         height: 300px;
