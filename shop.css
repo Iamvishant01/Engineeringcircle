@@ -164,7 +164,7 @@ input[type=checkbox] {
     height: 140px;
     margin-top: 15px;
     margin-left: 9px;
-    border-radius: 8px;
+    border-radius: 12px;
   }
   .box2 img{
     height: 240px;
@@ -396,6 +396,7 @@ input[type=checkbox] {
       }
       .box img{
         height: 170px;
+        border-radius: 10px;
       }
       .box2 img{
         height: 300px;
@@ -423,9 +424,11 @@ input[type=checkbox] {
         text-align: center;
         margin-top: 200px;
       }
+
       @media screen and (max-width:360px){
         .box img{
-          height: 200px;
+          height: 170px;
+          border-radius: 10px;
         }
       }
       .textarea h2{
