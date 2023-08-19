@@ -262,6 +262,24 @@ input[type=checkbox] {
     footer h4 b span{
       color: #49EF6D;
     }
+    .map{
+      display: flex;
+      padding: 10px 4%;
+      margin-top: 150px;
+      color: #fff;
+    }
+    .map h2{
+      font-size: 32px;
+    }
+    .map h2 span{
+      color: #00ff0d;
+      font-weight: 4000;
+    }
+    #map{
+      width: 1200px;
+      margin-left: -230px;
+      margin-top: 100px;
+    }
   @media (max-width: 768px) {
     body{
       background: url(bg/bg2.png);
@@ -339,6 +357,14 @@ input[type=checkbox] {
       footer h4{
         font-size: small;
         margin-left: 30px;
+      }
+      .map h2{
+        padding: 0px 0%;
+      }
+      #map{
+        width: 360px;
+        margin-left: -220px;
+        margin-top: 100px;
       }
       
 }
