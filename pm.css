@@ -289,6 +289,12 @@ input[type=checkbox] {
         font-size: 25px;
         word-wrap: break-word;
       }
+      .l5{
+        width: 17%;
+        float: right;
+        margin-top: -395px;
+        margin-right: 160px;
+      }
   @media (max-width: 768px) {
     body{
       background: url(bg/bg2.png);
