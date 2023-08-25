@@ -570,6 +570,19 @@ input[type=checkbox] {
       top: 0;
       width: 100%;
     }
+    .dce{
+      display: none;
+    }
+    .rn{
+      margin-top: 20px;
+      margin-left: 30px;
+      margin-right: -1px;
+      float: left;
+
+    }
+    .text {
+      margin-right: 10px;
+    }
     .text h1{
         font-family: 'Inter';
         font-size: 20px;
@@ -590,6 +603,7 @@ input[type=checkbox] {
       }
       #cou{
         font-size: 33px;
+        margin-top: 130px;
         padding: 10px 10%;
       }
       #Experts{
