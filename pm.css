@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
   }
+  html{
+    scroll-behavior: smooth;
+  }
   body{
     background: url(bg/bg1.png);
     height: 100vh;
@@ -292,9 +295,28 @@ input[type=checkbox] {
       .l5{
         width: 17%;
         float: right;
-        margin-top: -395px;
+        margin-top: -355px;
         margin-right: 160px;
       }
+      .rn{
+        font-family: 'Inter', sans-serif;
+        font-size: medium;
+        display: block;
+        width: fit-content;
+        border: 1px solid #FFE500;
+        padding: 11px 32px;
+        border-radius: 6px;
+        text-decoration: none;
+        color: #fff; 
+        transition: background 0.5s;
+        float: right;
+        margin-top: -70px;
+        margin-right: 200px;
+    }
+    .rn:hover{
+        background: #FFE500;
+        color: #000;
+    }
   @media (max-width: 768px) {
     body{
       background: url(bg/bg2.png);
