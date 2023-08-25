@@ -380,7 +380,15 @@ input[type=checkbox] {
       text-align: center;
       margin-top: 150px;
     }
+    .l5{
+      display: none;
+    }
+    .rn{
+      margin-top: -10px;
+      margin-bottom: 100px;
+    }
     .info{
+      width: 100%;
       padding: px;
     }
     .info h2{
