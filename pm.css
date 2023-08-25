@@ -261,7 +261,8 @@ input[type=checkbox] {
         height: 450px;
       }
       .info{
-        background-color: rgba(36, 36, 36, 0.158);
+        width: 60%;
+        background-color: rgba(0, 0, 0, 0.158);
         backdrop-filter: blur(60px);
         padding: 200px 10%;
         margin-top: 140px;
@@ -274,6 +275,7 @@ input[type=checkbox] {
         font-family: 'Poppins', sans-serif;
         font-weight: 100;
         font-size: 35px;
+        word-wrap: break-word;
       }
       .info h2 span{
         color: #51ff00;
@@ -285,6 +287,7 @@ input[type=checkbox] {
         margin-top: -60px;
         font-family: 'Poppins', sans-serif;
         font-size: 25px;
+        word-wrap: break-word;
       }
   @media (max-width: 768px) {
     body{
