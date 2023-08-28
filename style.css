@@ -176,10 +176,6 @@ input[type=checkbox] {
   box-sizing: border-box;
   font-size: 50px;
   }
-.p:hover{
-  transform: scale(1.1);
-  transition: 0.6s;
-}
 .p h3 {
   color: #fff;
 }
@@ -195,6 +191,10 @@ input[type=checkbox] {
   color: #fff;
   font-size: 25px;
   margin-left: 9px;
+}
+.blur{
+  backdrop-filter: blur(70px);
+  
 }
   .container{
       width: 100%;
