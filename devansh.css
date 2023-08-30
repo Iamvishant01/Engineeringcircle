@@ -393,16 +393,23 @@ input[type=checkbox] {
       }
       .box1 h5{
         color: #fff;
-        font-size:11px;
+        font-size:14px;
         margin-left: 100px;
         font-weight: 80;
         font-family: 'Inter', sans-serif;
       }
+      .box1 span{
+        color: transparent;
+      }
       .box1:hover{
         background: #ac7c35;
         transform: translateY(-10px);
-        transition: background 0.5s, transform 0.5s;
-    }
+        transition: background 0.6s, transform 0.5s;
+        height: 270px;
+      }
+      .box1 h5 span:hover{
+        color: #fff;
+      }
       .box2{
         width: 40%;
         height:120px;
@@ -616,6 +623,12 @@ input[type=checkbox] {
         background: #524e4e;
         border-radius: 25px;
         margin-left: 20px;
+      }
+      .box1:hover{
+        height:140px;
+      }
+      .box1 span:hover{
+        display: none;
       }
       .box1 img{
         height: 72px;
