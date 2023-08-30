@@ -399,7 +399,7 @@ input[type=checkbox] {
         font-family: 'Inter', sans-serif;
       }
       .box1:hover{
-        background: #86b141;
+        background: #ac7c35;
         transform: translateY(-10px);
         transition: background 0.5s, transform 0.5s;
     }
@@ -413,7 +413,7 @@ input[type=checkbox] {
         margin-left: 30px;
       }
       .box2:hover{
-        background: #ac7c35;
+        background: #86b141;
         transform: translateY(-10px);
         transition: background 0.5s, transform 0.5s;
     }
