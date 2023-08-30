@@ -460,12 +460,42 @@ input[type=checkbox] {
   .rn:hover p{
       color: #fff;
   }
+  .rn2{
+    display: block;
+    width: fit-content;
+    border: 1px solid #06c200;
+    padding: 12px 29px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff; 
+    transition: background 0.5s;
+    float: right;
+    margin-right: 250px;
+}
+.rn2:hover{
+    background: #00a11b;
+}
+.rn2:hover p{
+    color: #fff;
+}
   .dce{
     width: 15%;
     float: right;
     border-radius: 20px;
     margin-right: 225px;
     margin-top: -290px;
+  }
+  .note{
+    margin-top: 200px;
+    margin-bottom: -300px;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Inter';
+    backdrop-filter: blur(70px);
+    padding: 40px;
+  }
+  .note b{
+    color: #00ff00;
   }
   /* APPLYING MEDIA QUERIES */
     /*loader*/
@@ -580,12 +610,21 @@ input[type=checkbox] {
     .dce{
       display: none;
     }
+    .note{
+      backdrop-filter: blur(70px);
+      height: 200px;
+    }
     .rn{
       margin-top: 20px;
       margin-left: 30px;
       margin-right: -1px;
       float: left;
-
+    }
+    .rn2{
+      float: right;
+      margin-right: 123px;
+      margin-top: 25px;
+      padding: 12px 28px;
     }
     .text {
       margin-right: 10px;
