@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="mca.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOLE CAREER ACADEMY - EC</title>
+</head>
+<body>
+    <div class="loader"></div>
+    <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo">
+          <a href="index.html"><img src="logo/logo2.png" alt="" class="log"></a>
+        </div>
+    
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+    
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+    
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+    
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ourteam.html">Our Team</a></li>
+            <li><a href="shop.html">Shop</a></li>
+    
+            <li class="services">
+              <p>Study Material ▼</p>
+    
+              <!-- DROPDOWN MENU -->
+              <ul class="dropdown">
+                <li><a href="syllabus.html">Syllabus </a></li>
+                <li><a href="lm.html">Lab Manual PDF</a></li>
+                <li><a href="ma.html">Model ans Paper</a></li>
+              </ul>
+    
+            </li>
+    
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="pm.html"><span>Premium member</span></a></li>
+          </div>
+        </ul>
+      </nav>
+      <!---Content-->
+      <div class="mca">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </div>
+      <!---Content-->
+</body>
+<script>
+    window.addEventListener("load", () => {
+      const loader = document.querySelector(".loader");
+      loader.classList.add("loader-hidden");
+      loader.addEventListener("transitionend", () => {
+      document.body.removeChild("loader");
+      })
+      })
+  </script>
+</html>
