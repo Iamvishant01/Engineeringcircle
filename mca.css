@@ -164,13 +164,38 @@ input[type=checkbox] {
 }
 .mca p{
     float: left;
-    margin-top: 280px;
+    margin-top: -170px;
     word-wrap: break-word;
     margin-left: 20px;
     margin-right: 550px;
     font-size: 21px;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
+}
+.l{
+    height: 180px;
+    margin-top: 190px;
+    margin-right: 110px;
+}
+.rn{
+    display: block;
+    width: fit-content;
+    border: 1px solid #d60505;
+    padding: 14px 32px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff; 
+    transition: background 0.5s;
+    float: right;
+    margin-top: 400px;
+    margin-left: 100px;
+    margin-right: -175px;
+}
+.rn:hover{
+    background: #bd0000;
+}
+.rn:hover p{
+    color: #fff;
 }
   @media (max-width: 768px) {
     body{
