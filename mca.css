@@ -11,6 +11,13 @@
     background-position: center;
     background-size: cover;
   }
+  .mca2{
+    background: #b3b3b3;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+  }
   nav{
     font-family: 'Inter', sans-serif;
     font-weight: 500;
@@ -172,31 +179,36 @@ input[type=checkbox] {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
 }
-.l{
-    height: 180px;
-    margin-top: 190px;
-    margin-right: 110px;
+.container{
+  float: right;
+  margin-top: 230px;
+  margin-right: -70px;
+  margin-left: 100px;
+  width: 50%;
+  height: auto;
+  grid-gap: 60px;
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  flex-flow:wrap;
+  padding: 10px 10%;
 }
-.rn{
-    display: block;
-    width: fit-content;
-    border: 1px solid #d60505;
-    padding: 14px 32px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: #fff; 
-    transition: background 0.5s;
-    float: right;
-    margin-top: 400px;
-    margin-left: 100px;
-    margin-right: -175px;
-}
-.rn:hover{
-    background: #bd0000;
-}
-.rn:hover p{
-    color: #fff;
-}
+.box{
+  width: 55%;
+  height:190px;
+  border-radius: 10px;
+  background: rgb(221, 221, 221);
+  box-sizing: border-box;
+  padding: 10px;
+  }
+  .box:hover{
+    background: rgb(255, 131, 131);
+    transition: 0.7s ease;
+  }
+  .box img{
+    height: 102px;
+    margin: 10px 55px;
+  }
   @media (max-width: 768px) {
     body{
       background: url(bg/bg2.png);
