@@ -171,19 +171,15 @@ input[type=checkbox] {
 }
 .mca p{
     float: left;
-    margin-top: -170px;
+    margin-top: -260px;
     word-wrap: break-word;
     margin-left: 20px;
-    margin-right: 550px;
     font-size: 21px;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
 }
 .container{
-  float: right;
-  margin-top: 230px;
-  margin-right: -70px;
-  margin-left: 100px;
+  float: left;
   width: 50%;
   height: auto;
   grid-gap: 60px;
@@ -195,19 +191,69 @@ input[type=checkbox] {
 }
 .box{
   width: 55%;
-  height:190px;
+  margin-top: 230px;
+  margin-left: 670px;
+  margin-right: -300px;
+  height:220px;
   border-radius: 10px;
   background: rgb(221, 221, 221);
   box-sizing: border-box;
   padding: 10px;
   }
+  .box2{
+    width: 55%;
+    margin-top: -280px;
+    margin-left: 930px;
+    margin-right: -300px;
+    height:220px;
+    border-radius: 10px;
+    background: rgb(221, 221, 221);
+    box-sizing: border-box;
+    padding: 10px;
+    }
   .box:hover{
+    background: rgb(255, 131, 131);
+    transition: 0.7s ease;
+  }
+  .box2:hover{
     background: rgb(255, 131, 131);
     transition: 0.7s ease;
   }
   .box img{
     height: 102px;
     margin: 10px 55px;
+  }
+  .box2 img{
+    height: 102px;
+    margin: 10px 55px;
+  }
+  .box h2{
+    font-size: 35px;
+    color: #ff1239;
+    margin-left: 55px;
+  }
+  .box2 h2{
+    font-size: 35px;
+    color: #ff1239;
+    margin-left: 55px;
+  }
+  .box span p{
+    margin-left: 60px;
+  }
+  .box2 span p{
+    margin-left: 60px;
+  }
+  .box p{
+    font-family: 'Raleway', sans-serif;
+    float: left;
+    font-weight: 600;
+    margin-left: 25px;
+  }
+  .box2 p{
+    font-family: 'Raleway', sans-serif;
+    float: left;
+    font-weight: 600;
+    margin-left: 25px;
   }
   @media (max-width: 768px) {
     body{
