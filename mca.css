@@ -12,11 +12,26 @@
     background-size: cover;
   }
   .mca2{
-    background: #b3b3b3;
+    background: #fff;
     height: 100vh;
     width: 100%;
     background-position: center;
     background-size: cover;
+  }
+  .mca2 h2{
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 42px;
+  }
+  .mca2 h2 span{
+    color: #ff0000;
+    font-size: 42px;
+  }
+  .mca2 h2 span:hover{
+    font-size: 50px;
+    transition: 0.7s;
   }
   nav{
     font-family: 'Inter', sans-serif;
@@ -54,10 +69,12 @@
     display: flex;
     gap: 1em;
     font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 1000;
   }
   
   .menu li:hover {
-    background-color: #35a700;
+    background-color: #ff0000;
     border-radius: 5px;
     transition: 0.3s ease;
   }
@@ -66,7 +83,7 @@
     padding: 5px 14px;
   }
   .menu span{
-    background-color: #4feb07;
+    background-color: #ff0022;
     font-weight: 600;
     border-radius: 15px;
     padding-left: 15px;
@@ -235,13 +252,13 @@ input[type=checkbox] {
   .box2 h2{
     font-size: 35px;
     color: #ff1239;
-    margin-left: 55px;
+    margin-left: 85px;
   }
   .box span p{
     margin-left: 60px;
   }
   .box2 span p{
-    margin-left: 60px;
+    margin-left: 80px;
   }
   .box p{
     font-family: 'Raleway', sans-serif;
@@ -253,11 +270,11 @@ input[type=checkbox] {
     font-family: 'Raleway', sans-serif;
     float: left;
     font-weight: 600;
-    margin-left: 25px;
+    margin-left: 55px;
   }
   @media (max-width: 768px) {
     body{
-      background: url(bg/bg2.png);
+      background: #fff;
       height: 100vh;
       width: 100%;
       background-position: center;
@@ -292,7 +309,7 @@ input[type=checkbox] {
   
     .hamburger {
       display: block;
-      color: rgb(255, 255, 255);
+      color: #000;
     }
   
     .dropdown {
@@ -303,6 +320,24 @@ input[type=checkbox] {
   
     .dropdown li:hover {
       background-color: #49EF6D;
+    }
+    .mca p{
+      font-size: 15px;
+      word-wrap: break-word;
+      margin-left: 20px;
+      margin-top: -452px;
+    }
+    .box2{
+      margin-top: 500px;
+      margin-left: -500px;
+      width: 133%;
+    }
+    .box2 img{
+      width: 12px;
+    }
+    .box{
+      margin-top: 500px;
+      margin-left: 2px;
     }
 }
 #preloader{
